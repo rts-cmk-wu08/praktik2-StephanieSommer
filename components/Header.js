@@ -6,8 +6,8 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header>
-      <section className="bg-blue text-white flex justify-around p-3 gap-48">
+    <header className="text-lg">
+      <section className="bg-blue text-white flex justify-between px-56 py-3">
         <div className="flex gap-6">
           <p className="flex">
             <IoIosPaperPlane className="mt-1 mr-1" /> 4000@dinmaegler.com
@@ -21,9 +21,9 @@ const Header = () => {
           <p>Log ind</p>
         </div>
       </section>
-      <section className="flex justify-around mt-6">
+      <section className="flex justify-between mx-56 my-3">
         <Logo />
-        <Navigation />
+        <Navigation header />
       </section>
     </header>
   );
