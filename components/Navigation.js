@@ -1,12 +1,13 @@
 import Link from "next/link";
 
-const Navigation = () => {
+const Navigation = ({ header, footer }) => {
   return (
-    <nav className="flex gap-4">
+    <nav className={`flex gap-4 mt-4 ${footer && "flex-col"}`}>
       <Link href="/tilsalg">Boliger til salg</Link>
       <Link href="/maeglere">Mæglere</Link>
-      <Link href="/favoritter">Mine favoritter</Link>
+      {header && <Link href="/favoritter">Mine favoritter</Link>}
       <Link href="/kontakt">Kontakt os</Link>
+      {footer && <Link href="/login">Log ind / bliv bruger</Link>}
     </nav>
   );
 };

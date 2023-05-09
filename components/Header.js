@@ -6,7 +6,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header>
+    <header className="text-lg">
       <section className="bg-blue text-white flex justify-between px-56 py-3">
         <div className="flex gap-6">
           <p className="flex">
@@ -21,9 +21,9 @@ const Header = () => {
           <p>Log ind</p>
         </div>
       </section>
-      <section className="flex justify-between mx-56 mt-6">
+      <section className="flex justify-between mx-56 my-3">
         <Logo />
-        <Navigation />
+        <Navigation header />
       </section>
     </header>
   );
