@@ -1,9 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 import dinmaegler from "/public/dinmaegler.svg"
 
 const Logo = () => {
   return (
-      <Image src={dinmaegler} />
+     <Link href="/"> <Image src={dinmaegler} /></Link>
   );
 };
 
