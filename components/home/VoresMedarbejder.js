@@ -46,7 +46,9 @@ const VoresMedarbejder = async () => {
           </li>
         ))}
       </ul>
-      <Link href="/" className="bg-blue text-white p-4 mt-9">Se alle mæglere</Link>
+      <Link href="/" className="bg-blue text-white p-4 mt-9">
+        Se alle mæglere
+      </Link>
     </section>
   );
 };
