@@ -4,7 +4,7 @@ import dinmaegler from "/public/dinmaegler.svg"
 
 const Logo = () => {
   return (
-     <Link href="/"> <Image src={dinmaegler} /></Link>
+     <Link href="/"> <Image src={dinmaegler} alt="maegler logo" /></Link>
   );
 };
 
