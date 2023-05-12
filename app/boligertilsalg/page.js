@@ -1,6 +1,6 @@
-import AlleBoliger from "@/components/tilsalg/AlleBoliger";
 import Hero from "@/components/tilsalg/Banner";
 import SøgeFuntion from "@/components/tilsalg/SøgeFunktion";
+import AlleBoliger from "@/components/tilsalg/AlleBoliger";
 
 const BoligerTilSalg = () => {
   return (
