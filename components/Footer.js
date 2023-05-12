@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-grey text-lg relative">
+    <footer className="pt-12 bg-grey text-lg relative">
       <div className="px-56">
         <Logo />
         <p className="w-2/3 pt-4">
