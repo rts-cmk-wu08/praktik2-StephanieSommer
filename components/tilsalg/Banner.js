@@ -2,7 +2,11 @@ import Image from "next/image";
 import Banner from "/public/Banner.svg";
 
 const Hero = () => {
-  return <Image src={Banner} />;
+  return (
+    <section>
+      <Image src={Banner} />
+    </section>
+  );
 };
 
 export default Hero;
