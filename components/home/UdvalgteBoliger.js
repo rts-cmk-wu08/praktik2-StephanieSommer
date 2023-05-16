@@ -20,7 +20,7 @@ const UdvalgteBoliger = async () => {
         There are many variations of passages of Lorem Ipsum available but the
         this in majority have suffered alteration in some
       </p>
-      <ul className="grid grid-cols-2 pt-16 px-56">
+      <ul className="grid grid-cols-2 gap-20 pt-16 px-56">
         {udvalgte.map((udvalgt) => (
           <li>
             <Image
@@ -28,7 +28,7 @@ const UdvalgteBoliger = async () => {
               width={udvalgt.images[0].formats.thumbnail.width}
               height={udvalgt.images[0].formats.thumbnail.height}
             />
-            <div className="bg-white p-6 w-[500px] shadow-lg mb-9">
+            <div className="bg-white p-6 w-[500px] mb-9 shadow-lg">
               <h2 className="text-lg font-semibold">{udvalgt.adress1}</h2>
               <div className="flex gap-1 py-4">
                 <p>{udvalgt.postalcode}</p>
@@ -55,7 +55,7 @@ const UdvalgteBoliger = async () => {
       </ul>
       <div className="text-center mt-7">
         <button className="bg-blue text-white w-36 h-12">
-          <Link href="#">Se alle boliger</Link>
+          <Link href="/boligertilsalg">Se alle boliger</Link>
         </button>
       </div>
     </section>

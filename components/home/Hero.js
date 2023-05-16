@@ -1,15 +1,14 @@
 import Image from "next/image";
-import hero from "/public/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center relative">
-      <Image src={hero} alt="dreamhouse" />
+    <section className="relative flex justify-center">
+      <Image src="/hero.jpg" width={1920} height={850} />
       <h2 className="absolute inset-28 text-center font-semibold text-5xl text-white">
         Søg efter din drømmebolig
       </h2>
       <div className="absolute top-1/3 bg-white w-[920px] h-[202px] flex flex-col justify-center gap-4 pl-9">
-        <p className="text-xl font-semibold">
+        <p className="text-xl font-semibold pb-4">
           Søg blandt 158 boliger til salg i 74 butikker
         </p>
         <p>Hvad skal din næste bolig indeholde</p>

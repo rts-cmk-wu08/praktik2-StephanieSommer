@@ -1,5 +1,4 @@
 import Image from "next/image";
-import kontaktmedarbejder from "/public/kontaktmedarbejder.png";
 
 const getData = async (medarbejderId) => {
   const result = await fetch(
@@ -16,7 +15,7 @@ const MedarbejderDetails = async ({ params: { medarbejderId } }) => {
 
   return (
     <main>
-      <Image src={kontaktmedarbejder} />
+      <Image src="/KontaktBanner.png" width={1920} height={500} />
       <Image
         src={agent.image.url}
         width={agent.image.formats.thumbnail.width}

@@ -1,16 +1,10 @@
 import Image from "next/image";
-import familyImage from "/public/familyImage.svg";
-import homeIcon1 from "/public/homeIcon1.svg";
-import homeIcon2 from "/public/homeIcon2.svg";
-import propertyIcon from "/public/propertyIcon.svg";
-import mapsIcon from "/public/mapsIcon.svg";
-import customerIcon from "/public/customerIcon.svg";
 
 const LidtOmOs = () => {
   return (
     <section className="px-56 py-24">
       <div className="flex gap-28">
-        <Image src={familyImage} alt="family photo" />
+        <Image src="/familyImage.svg" width={500} height={500} />
         <div>
           <div>
             <h2 className="text-4xl font-semibold">
@@ -29,11 +23,13 @@ const LidtOmOs = () => {
               the readable content of a page when looking at its layout.
             </p>
           </div>
-          <div className="flex pt-9 justify-between">
+          <div className="flex justify-between pt-9">
             <div className="flex gap-5">
               <Image
-                src={homeIcon1}
-                className="bg-lightblue border-8 w-16 border-lightblue"
+                src="/homeIcon1.svg"
+                width={500}
+                height={500}
+                className="bg-lightblue border-8 border-lightblue w-16"
                 alt="hand and house icon"
               />
               <div>
@@ -43,8 +39,10 @@ const LidtOmOs = () => {
             </div>
             <div className="flex gap-5">
               <Image
-                src={homeIcon2}
-                className="bg-lightblue border-8 w-16 border-lightblue"
+                src="/homeIcon2.svg"
+                width={500}
+                height={500}
+                className="bg-lightblue border-8 border-lightblue w-16"
                 alt="house icon"
               />
               <div>
@@ -60,8 +58,10 @@ const LidtOmOs = () => {
       <section className="flex gap-6 mt-14">
         <div className="flex gap-4">
           <Image
-            src={propertyIcon}
-            className="bg-lightblue border-[12px] w-14 h-14 border-lightblue"
+            src="/propertyIcon.svg"
+            width={500}
+            height={500}
+            className="bg-lightblue border-[12px] border-lightblue w-14 h-14"
             alt="property icon"
           />
           <div>
@@ -74,8 +74,10 @@ const LidtOmOs = () => {
         </div>
         <div className="flex gap-4">
           <Image
-            src={mapsIcon}
-            className="bg-lightblue border-[12px] w-14 h-14 border-lightblue"
+            src="/mapsIcon.svg"
+            width={500}
+            height={500}
+            className="bg-lightblue border-[12px] border-lightblue w-14 h-14"
             alt="maps icon"
           />
           <div>
@@ -88,8 +90,10 @@ const LidtOmOs = () => {
         </div>
         <div className="flex gap-4">
           <Image
-            src={customerIcon}
-            className="bg-lightblue border-[12px] w-14 h-14 border-lightblue"
+            src="/customerIcon.svg"
+            width={500}
+            height={500}
+            className="bg-lightblue border-[12px] border-lightblue w-14 h-14"
             alt="hand icon"
           />
           <div>
