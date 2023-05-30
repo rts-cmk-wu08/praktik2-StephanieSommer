@@ -1,4 +1,8 @@
+import Kontaktformular from "@/components/Kontaktformular";
 import Image from "next/image";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoIosPaperPlane } from "react-icons/io";
+import { BiSearch } from "react-icons/bi";
 
 const getData = async (medarbejderId) => {
   const result = await fetch(
@@ -16,61 +20,77 @@ const MedarbejderDetails = async ({ params: { medarbejderId } }) => {
   return (
     <main>
       <Image src="/KontaktBanner.png" width={1920} height={500} />
-      <Image
-        src={agent.image.url}
-        width={agent.image.formats.thumbnail.width}
-        height={agent.image.formats.thumbnail.height}
-      />
-      <p className="mt-4 text-2xl font-semibold">{agent.name}</p>
-      <p className="mt-2 text-lg text-darkgrey">{agent.title}</p>
-      <p>{agent.phone}</p>
-      <p>{agent.email}</p>
-      <p>Om {agent.name}</p>
-      {/* <p>{agent.description}</p> */}
+      <section className="mx-56 flex gap-6 my-24">
+        <div className="border-[1px] border-[#D3DEE8] w-[730px] p-6">
+          <div className="flex gap-6">
+            <Image
+              src={agent.image.url}
+              width={agent.image.formats.thumbnail.width}
+              height={agent.image.formats.thumbnail.height}
+              className="w-[280px] h-[280px]"
+            />
+            <div>
+              <p className="mt-4 text-2xl font-semibold">{agent.name}</p>
+              <p className="mt-2 text-lg text-darkgrey">{agent.title}</p>
+              <div className="border-t-2 my-4 w-14"></div>
+              <div className="flex gap-4 my-2">
+                <BsFillTelephoneFill />
+                <p>{agent.phone}</p>
+              </div>
+              <div className="flex gap-4">
+                <IoIosPaperPlane />
+                <p>{agent.email}</p>
+              </div>
+            </div>
+          </div>
 
-      <div>
-        <h2>Kontakt {agent.name}</h2>
-        <form action="">
-          <label htmlFor="name">Navn</label>
-          <input type="text" name="name" id="name" placeholder="Indtast navn" />
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Indtast email"
-          />
-          <label htmlFor="emne">Emne</label>
-          <input
-            type="text"
-            name="emne"
-            id="emne"
-            placeholder="Hvad drejer din henvendelse sig om?"
-          />
-          <label htmlFor="besked">Besked</label>
-          <textarea
-            name="besked"
-            id="besked"
-            cols="30"
-            rows="10"
-            placeholder="Skriv din besked her..."
-          ></textarea>
-          <input type="button" value="Send besked" />
-        </form>
-      </div>
+          <div className="mt-9">
+            <p className="text-xl font-semibold">Om {agent.name}</p>
+            <div className="border-t-4 border-black my-3 w-14"></div>
+            <p>
+              {agent.description} Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Facilis, eveniet assumenda explicabo, quos
+              mollitia animi dolor recusandae, vel dicta suscipit magnam magni a
+              rerum ea non nesciunt saepe amet libero temporibus blanditiis eius
+              quis illum. Dolore in ratione aspernatur molestiae!
+            </p>
+          </div>
 
-      <div>
-        <h2>Search Property</h2>
-        <form action="">
-          <input type="search" name="search" id="search" placeholder="Search" />
-        </form>
-      </div>
+          <div className="border-[1px] border-[#D3DEE8] mt-24 p-6 rounded">
+            <h2 className="text-xl font-semibold">Kontakt {agent.name}</h2>
+            <div className="border-t-4 border-black my-3 w-14"></div>
+            <Kontaktformular />
+          </div>
+        </div>
 
-      <div>
-        <h2>Find The Best Property For Rent Or Buy</h2>
-        <p>Call Us Now</p>
-        <p>+00 123 456 789</p>
-      </div>
+        <div>
+          <div className="bg-lightblue h-[175px] p-6">
+            <h2 className="text-2xl font-medium">Search Property</h2>
+            <div className="border-t-2 my-4"></div>
+            <form action="" className="relative">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search"
+                className="border-2 p-2 pl-8 mt-2 rounded w-full"
+              />
+              <BiSearch className="absolute top-[22px] left-3 text-darkgrey" />
+            </form>
+          </div>
+
+          <div className="bg-blue mt-5 text-white text-center py-28">
+            <h2 className="text-3xl leading-10">
+              Find The Best{" "}
+              <span className="flex justify-center">Property</span> For Rent Or
+              Buy
+            </h2>
+            <div className="border-t-4 border-white my-4 mx-28"></div>
+            <p className="text-lg">Call Us Now</p>
+            <p className="text-3xl mt-4">+00 123 456 789</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
