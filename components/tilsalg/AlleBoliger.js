@@ -12,9 +12,10 @@ const getData = async () => {
 
 const AlleBoliger = async () => {
   const boliger = await getData();
+
   return (
-    <section>
-      <ul className="grid grid-cols-2 pt-16 px-56">
+    <section className="px-56">
+      <ul className="grid grid-cols-2 gap-20 pt-16">
         {boliger.map((bolig) => (
           <li>
             <Link href={`/boligertilsalg/${bolig.id}`}>

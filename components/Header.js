@@ -2,12 +2,13 @@ import { IoIosPaperPlane } from "react-icons/io";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import Navigation from "./Navigation";
-import Logo from "./Logo";
+import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className="text-lg">
-      <section className="bg-blue text-white flex justify-between px-56 py-3">
+      <section className="flex justify-between bg-blue text-white px-56 py-3">
         <div className="flex gap-6">
           <p className="flex">
             <IoIosPaperPlane className="mt-1 mr-1" /> 4000@dinmaegler.com
@@ -18,11 +19,13 @@ const Header = () => {
         </div>
         <div className="flex">
           <FaUser className="mt-1 mr-2" />
-          <p>Log ind</p>
+          <Link href="#">Log ind</Link>
         </div>
       </section>
       <section className="flex justify-between mx-56 my-3">
-        <Logo />
+        <Link href="/">
+          <Image src="/dinmaegler.svg" width={300} height={500} />
+        </Link>
         <Navigation header />
       </section>
     </header>

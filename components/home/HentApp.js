@@ -1,6 +1,4 @@
 import Image from "next/image";
-import mobil1 from "/public/mobil1.png";
-import mobil2 from "/public/mobil2.svg";
 import Link from "next/link";
 import { BsGooglePlay, BsApple } from "react-icons/bs";
 
@@ -33,8 +31,8 @@ const HentApp = () => {
         </div>
       </div>
       <div className="flex pt-20">
-        <Image src={mobil1} />
-        <Image src={mobil2} />
+        <Image src="/mobil1.png" width={270} height={425} />
+        <Image src="/mobil2.svg" width={270} height={425} />
       </div>
     </section>
   );

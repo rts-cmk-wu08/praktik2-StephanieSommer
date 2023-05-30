@@ -20,7 +20,7 @@ const VoresMedarbejder = async () => {
       <h2 className="text-4xl font-semibold">
         Mød vores engagerede medarbejdere
       </h2>
-      <p className="text-lg pt-6 w-[550px] m-auto text-center">
+      <p className="text-lg text-center pt-6 w-[550px] m-auto">
         Din Mægler er garant for altid veluddannet assistance i dit boligsalg.
         Kontakt en af vores medarbejdere.
       </p>
@@ -46,7 +46,7 @@ const VoresMedarbejder = async () => {
           </li>
         ))}
       </ul>
-      <Link href="/" className="bg-blue text-white p-4 mt-9">
+      <Link href="/medarbejdere" className="bg-blue text-white p-4 mt-9">
         Se alle mæglere
       </Link>
     </section>
