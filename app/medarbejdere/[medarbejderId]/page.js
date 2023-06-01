@@ -47,13 +47,7 @@ const MedarbejderDetails = async ({ params: { medarbejderId } }) => {
           <div className="mt-9">
             <p className="text-xl font-semibold">Om {agent.name}</p>
             <div className="border-t-4 border-black my-3 w-14"></div>
-            <p>
-              {agent.description} Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Facilis, eveniet assumenda explicabo, quos
-              mollitia animi dolor recusandae, vel dicta suscipit magnam magni a
-              rerum ea non nesciunt saepe amet libero temporibus blanditiis eius
-              quis illum. Dolore in ratione aspernatur molestiae!
-            </p>
+            <p>{agent.description}</p>
           </div>
 
           <div className="border-[1px] border-[#D3DEE8] mt-24 p-6 rounded">
