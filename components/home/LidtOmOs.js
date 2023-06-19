@@ -4,7 +4,7 @@ const LidtOmOs = () => {
   return (
     <section className="px-56 py-24">
       <div className="flex gap-28">
-        <Image src="/familyImage.svg" width={500} height={500} />
+        <Image src="/familyImage.svg" width={500} height={500} alt="" />
         <div>
           <div>
             <h2 className="text-4xl font-semibold">

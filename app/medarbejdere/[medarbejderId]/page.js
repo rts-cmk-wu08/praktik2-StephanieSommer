@@ -19,7 +19,7 @@ const MedarbejderDetails = async ({ params: { medarbejderId } }) => {
 
   return (
     <main>
-      <Image src="/KontaktBanner.png" width={1920} height={500} />
+      <Image src="/KontaktBanner.png" width={1920} height={500} alt="" />
       <section className="mx-56 flex gap-6 my-24">
         <div className="border-[1px] border-[#D3DEE8] w-[730px] p-6">
           <div className="flex gap-6">
@@ -28,6 +28,7 @@ const MedarbejderDetails = async ({ params: { medarbejderId } }) => {
               width={agent.image.formats.thumbnail.width}
               height={agent.image.formats.thumbnail.height}
               className="w-[280px] h-[280px]"
+              alt=""
             />
             <div>
               <p className="mt-4 text-2xl font-semibold">{agent.name}</p>

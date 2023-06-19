@@ -16,7 +16,7 @@ const Medarbejdere = async () => {
 
   return (
     <main>
-      <Image src="/medarbejdereBanner.png" width={1920} height={500} />
+      <Image src="/medarbejdereBanner.png" width={1920} height={500} alt="" />
       <section className="px-56 text-center my-28">
         <ul className="grid grid-cols-3 gap-9 my-16">
           {agents.map((agent) => (
@@ -27,6 +27,7 @@ const Medarbejdere = async () => {
                   width={agent.image.formats.thumbnail.width}
                   height={agent.image.formats.thumbnail.height}
                   className="h-[300px]"
+                  alt=""
                 />
                 <p className="mt-4 text-2xl font-semibold">{agent.name}</p>
                 <p className="mt-2 text-lg text-darkgrey">{agent.title}</p>

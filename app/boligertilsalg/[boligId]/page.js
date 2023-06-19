@@ -1,6 +1,11 @@
+// 'use client';
 import Image from "next/image";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoIosPaperPlane } from "react-icons/io";
+// import { useState } from "react";
+// import Modal from "react-modal";
+
+// Modal.setAppElement("body");
 
 const getData = async (boligId) => {
   const result = await fetch(
@@ -14,13 +19,15 @@ const getData = async (boligId) => {
 
 const BoligDetail = async ({ params: { boligId } }) => {
   const bolig = await getData(boligId);
+  // const [isOpen, setIsOpen] = useState(false);
   return (
-    <main>
+    <main id="main">
       <Image
         src={bolig.images[0].url}
         width={1920}
         height={500}
         className="h-screen"
+        alt=""
       />
       <div className="flex mx-56 justify-between pt-16 pb-3">
         <div>
@@ -30,12 +37,52 @@ const BoligDetail = async ({ params: { boligId } }) => {
             <p>{bolig.city}</p>
           </div>
         </div>
-        <Image
-          src="/Group58.png"
-          width={500}
-          height={500}
-          className="h-11 w-72"
-        />
+        {/* <div className="flex gap-6 pb-11">
+          <button onClick={() => setIsOpen(true)}>
+            <Image
+              src="/ImageGalleryIcon.png"
+              width={500}
+              height={500}
+              className="h-9 w-10"
+              alt=""
+            />
+          </button>
+          <Modal
+            isOpen={isOpen}
+            onRequestClose={() => setIsOpen(false)}
+            className="bg-black"
+          >
+            <button onClick={() => setIsOpen(false)}>Close Modal</button>
+          </Modal>
+          <button>
+            <Image
+              src="/FloorplanIcon.png"
+              width={500}
+              height={500}
+              className="h-9 w-9"
+              alt=""
+            />
+          </button>
+          <button>
+            <Image
+              src="/MapIcon.png"
+              width={500}
+              height={500}
+              className="h-9 w-6"
+              alt=""
+            />
+          </button>
+          <button>
+            <Image
+              src="/HeartIcon.png"
+              width={500}
+              height={500}
+              className="h-9 w-9"
+              alt=""
+            />
+          </button>
+        </div> */}
+
         <p className="text-3xl font-semibold">Kr. {bolig.price}</p>
       </div>
       <div className="border-t-2 bg-black mx-56"></div>
@@ -96,6 +143,7 @@ const BoligDetail = async ({ params: { boligId } }) => {
               width={bolig.agent.image.size}
               height={bolig.agent.image.size}
               className="h-[200px] w-[200px]"
+              alt=""
             />
             <div>
               <p className="text-2xl font-semibold pb-2">{bolig.agent.name}</p>

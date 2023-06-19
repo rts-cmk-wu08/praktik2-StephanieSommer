@@ -7,7 +7,7 @@ import { IoLocationSharp } from "react-icons/io5";
 const Kontakt = () => {
   return (
     <main>
-      <Image src="/KontaktOsBanner.png" width={1920} height={500} />
+      <Image src="/KontaktOsBanner.png" width={1920} height={500} alt="" />
       <section className="mx-56 my-20">
         <h2 className="text-3xl font-medium">
           Vi sidder klar til at besvare dine spørgsmål
@@ -47,7 +47,7 @@ const Kontakt = () => {
           </div>
         </div>
       </section>
-      <Image src="/Map.png" width={1920} height={500} />
+      <Image src="/Map.png" width={1920} height={500} alt="" />
     </main>
   );
 };

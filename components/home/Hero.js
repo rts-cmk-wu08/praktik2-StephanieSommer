@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="relative flex justify-center">
-      <Image src="/hero.jpg" width={1920} height={850} />
+      <Image src="/hero.jpg" width={500} height={500} className="h-auto w-full" alt="" />
       <h2 className="absolute inset-28 text-center font-semibold text-5xl text-white">
         Søg efter din drømmebolig
       </h2>

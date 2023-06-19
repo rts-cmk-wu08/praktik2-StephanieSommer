@@ -31,6 +31,7 @@ const VoresMedarbejder = async () => {
               src={agent.image.url}
               width={agent.image.formats.thumbnail.width}
               height={agent.image.formats.thumbnail.height}
+              alt=""
             />
             <p className="mt-4 text-2xl font-semibold">{agent.name}</p>
             <p className="mt-2 text-lg text-darkgrey">{agent.title}</p>

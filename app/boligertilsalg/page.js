@@ -5,7 +5,7 @@ import Image from "next/image";
 const BoligerTilSalg = () => {
   return (
     <main>
-      <Image src="/Banner.svg" width={1920} height={500} />
+      <Image src="/Banner.svg" width={1920} height={500} alt="" />
       {/* <SøgeFuntion /> */}
       <AlleBoliger />
     </main>

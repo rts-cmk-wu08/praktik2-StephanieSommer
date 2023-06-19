@@ -27,6 +27,7 @@ const UdvalgteBoliger = async () => {
               src={udvalgt.images[0].formats.thumbnail.url}
               width={udvalgt.images[0].formats.thumbnail.width}
               height={udvalgt.images[0].formats.thumbnail.height}
+              alt=""
             />
             <div className="bg-white p-6 w-[500px] mb-9 shadow-lg">
               <h2 className="text-lg font-semibold">{udvalgt.adress1}</h2>

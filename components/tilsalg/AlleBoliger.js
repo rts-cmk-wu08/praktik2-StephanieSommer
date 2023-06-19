@@ -23,6 +23,7 @@ const AlleBoliger = async () => {
                 src={bolig.images[0].formats.thumbnail.url}
                 width={bolig.images[0].formats.thumbnail.width}
                 height={bolig.images[0].formats.thumbnail.height}
+                alt=""
               />
               <div className="bg-white p-6 w-[500px] shadow-lg mb-9">
                 <h2 className="text-lg font-semibold">{bolig.adress1}</h2>
