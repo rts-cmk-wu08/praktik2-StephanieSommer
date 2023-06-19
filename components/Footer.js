@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="relative pt-12 bg-grey text-lg">
       <div className="px-56">
         <Link href="/">
-          <Image src="/dinmaegler.svg" width={300} height={500} />
+          <Image src="/dinmaegler.svg" width={300} height={500} alt="" />
         </Link>
         <p className="w-2/3 pt-4">
           There are many variations of passages of Lorem Ipsum available, but

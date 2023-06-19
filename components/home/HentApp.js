@@ -31,8 +31,8 @@ const HentApp = () => {
         </div>
       </div>
       <div className="flex pt-20">
-        <Image src="/mobil1.png" width={270} height={425} />
-        <Image src="/mobil2.svg" width={270} height={425} />
+        <Image src="/mobil1.png" width={270} height={425} alt="" />
+        <Image src="/mobil2.svg" width={270} height={425} alt="" />
       </div>
     </section>
   );

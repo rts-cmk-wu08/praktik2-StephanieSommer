@@ -8,6 +8,7 @@ const Nyhedsbrev = () => {
         width={1920}
         height={500}
         className="bg-blue"
+        alt=""
       />
       <div className="flex absolute top-20 items-center gap-20 mx-56">
         <h2 className="text-white text-2xl">
